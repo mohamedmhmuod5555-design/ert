@@ -114,6 +114,8 @@ else:
   st.session_state.sign=random.choice(['+','-','*','/'])
  if 'feed' not in st.session_state:
   st.session_state.feed=0
+if 'start_time' not in st.session_state:
+  st.session_state.start_time=time.time()
 
 
  num1 = st.session_state.num1
@@ -158,12 +160,9 @@ else:
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
   st.rerun()
-time1=st.progress(100)
-for sec in range (60,-1,-1):
-  time.sleep(1)
-  percentage=(float(sec/60))
-  time1.progress(percentage,text=f" الثواني المتبقيه {sec}")
-    
+elpased=st.session_state.start_time-time.time()
+if elpased<60
+ st.error("للاسف انتهي الوقت ")
 
  
 
