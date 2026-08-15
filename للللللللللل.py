@@ -160,8 +160,8 @@ if 'start_time' not in st.session_state:
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
   st.rerun()
-elpased=st.session_state.start_time-time.time()
-if elpased<60
+elpased=time.time()-st.session_state.start_time
+if elpased<60:
  st.error("للاسف انتهي الوقت ")
 
  
