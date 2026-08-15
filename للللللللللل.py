@@ -131,7 +131,7 @@ else:
  
  st.toast("هيا في تحدي 60 ثانيه ")
  st.write(num1,sign,num2)
-with st.form:
+with st.form(key="60 sec challenge"):
   button=st.form_submit_button("تأكيد الاجابه")
 
 
