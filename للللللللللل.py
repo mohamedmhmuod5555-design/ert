@@ -114,8 +114,8 @@ else:
   st.session_state.sign=random.choice(['+','-','*','/'])
  if 'feed' not in st.session_state:
   st.session_state.feed=0
-if 'start_time' not in st.session_state:
-  st.session_state.start_time=time.time()
+ if 'start_time' not in st.session_state:
+   st.session_state.start_time=time.time()
 
 
  num1 = st.session_state.num1
