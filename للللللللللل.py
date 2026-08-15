@@ -139,8 +139,8 @@ else:
  if number == sc:
   st.session_state.num += 1
   st.session_state.feed="correct"
-  else:
-    st.session_state.feed="false" 
+else:
+  st.session_state.feed="false" 
 if st.session_state.feed=="correct":
   st.success("انك اسطوره يا عبقري الرياضه ")
   st.balloons()
