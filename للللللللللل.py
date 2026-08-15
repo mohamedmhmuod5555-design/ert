@@ -134,12 +134,12 @@ else:
 button=st.form_button("تأكيد الاجابه")
 
 time1=st.progress(100)
- for sec in range (60,-1,-1):
-   time.sleep(1)
-   percentage=(float(sec/60))
-   time1.progress(percentage,text=f" الثواني المتبقيه {sec}")
+for sec in range (60,-1,-1):
+  time.sleep(1)
+  percentage=(float(sec/60))
+  time1.progress(percentage,text=f" الثواني المتبقيه {sec}")
     
- number=st.number_input("ادخل النتيجه ",step=1)
+number=st.number_input("ادخل النتيجه ",step=1)
  if button :
    st.session_state.count += 1
    if number == sc:
