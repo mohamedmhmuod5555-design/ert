@@ -136,7 +136,7 @@ else:
    number=st.number_input("ادخل النتيجه ",step=1,key="60 sec1 challenge")
  if button :
     time1=st.progress(percentage)
-   st.session_state.count += 1
+    st.session_state.count += 1
    if number == sc:
      st.session_state.num += 1
      st.session_state.feed="correct"
