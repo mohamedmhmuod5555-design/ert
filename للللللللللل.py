@@ -166,5 +166,5 @@ if st.session_state.feed=="false":
   st.rerun()
 
   
- st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions" )
+  st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions" )
  
