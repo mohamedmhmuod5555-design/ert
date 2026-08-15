@@ -141,7 +141,7 @@ for sec in range (60,-1,-1):
   percentage=(float(sec/60))
   time1.progress(percentage,text=f" الثواني المتبقيه {sec}")
     
-number=st.number_input("ادخل النتيجه ",step=1)
+
 if button :
   st.session_state.count += 1
   if number == sc:
