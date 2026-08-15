@@ -133,7 +133,7 @@ else:
  st.write(num1,sign,num2)
 with st.form(key="60 sec challenge"):
   button=st.form_submit_button("تأكيد الاجابه")
-
+  number=st.number_input("ادخل النتيجه ",step=1,key="60 sec challenge")
 
 time1=st.progress(100)
 for sec in range (60,-1,-1):
