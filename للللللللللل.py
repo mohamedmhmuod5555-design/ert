@@ -161,8 +161,17 @@ else:
   time.sleep(1)
   st.rerun()
 elpased=time.time()-st.session_state.start_time
-if elpased<1:
+max=max(0,60-int(elpased))
+if elpased<=0:
  st.error("للاسف انتهي الوقت ")
+else:
+  time1=st.progress(100)
+  for sec in range (60,-1,-1):
+   time.sleep(1)
+   percentage=(float(sec/60))
+   time1.progress(percentage,text=f" الثواني المتبقيه {sec}")
+    
+
 
  
 
