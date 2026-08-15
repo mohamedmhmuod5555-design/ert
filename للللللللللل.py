@@ -141,7 +141,7 @@ else:
   st.session_state.feed="correct"
  else:
   st.session_state.feed="false" 
-if st.session_state.feed=="correct":
+ if st.session_state.feed=="correct":
   st.success("انك اسطوره يا عبقري الرياضه ")
   st.balloons()
   st.session_state.feed=None
@@ -150,7 +150,7 @@ if st.session_state.feed=="correct":
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
   st.rerun()
-if st.session_state.feed=="false":
+ if st.session_state.feed=="false":
   st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
   st.session_state.feed=None
   st.session_state.num1=random.randint(1,int(st.session_state.ran))
@@ -158,11 +158,11 @@ if st.session_state.feed=="false":
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
   st.rerun()
-  time1=st.progress(100)
-  for sec in range (60,-1,-1):
-    time.sleep(1)
-    percentage=(float(sec/60))
-    time1.progress(percentage,text=f" الثواني المتبقيه {sec}")
+time1=st.progress(100)
+for sec in range (60,-1,-1):
+  time.sleep(1)
+  percentage=(float(sec/60))
+  time1.progress(percentage,text=f" الثواني المتبقيه {sec}")
     
 
  
