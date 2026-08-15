@@ -161,7 +161,7 @@ else:
   time.sleep(1)
   st.rerun()
 elpased=time.time()-st.session_state.start_time
-if elpased<60:
+if elpased<1:
  st.error("للاسف انتهي الوقت ")
 
  
