@@ -131,7 +131,7 @@ else:
  
  st.toast("هيا في تحدي 60 ثانيه ")
  st.write(num1,sign,num2)
-button=st.form_button("تأكيد الاجابه")
+button=st.form_submit_button("تأكيد الاجابه")
 
 time1=st.progress(100)
 for sec in range (60,-1,-1):
