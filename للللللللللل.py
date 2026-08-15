@@ -162,7 +162,7 @@ else:
   st.rerun()
 elpased=time.time()-st.session_state.start_time
 max=max(0,10-int(elpased))
-if elpased<=0:
+if max<=0:
  st.error("للاسف انتهي الوقت ")
 else:
   time1=st.progress(100)
